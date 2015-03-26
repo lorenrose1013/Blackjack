@@ -1,9 +1,9 @@
 public class Card {
-	String suit;
-	String symbol;
-	int order;
-	int val;
-	String line1, line2, line3, line4, line5, line6;
+	public String suit;
+	public String symbol;
+	public int order;
+	public int val;
+	public String line1, line2, line3, line4, line5, line6;
 
 
 	public Card(String newSuit, int newOrder, int newVal){
@@ -66,8 +66,11 @@ public class Card {
 		}
 	}
 
-	public String toString(){
-		return line1  + "\n" + line2 + "\n" + line3 + "\n" + line4 + "\n" + line5 + "\n" + line6 + "\n";
-	}
+	// public String toString(){
+	// 	return line1  + "\n" + line2 + "\n" + line3 + "\n" + line4 + "\n" + line5 + "\n" + line6 + "\n";
+	// }
 
+	public String toString(){
+		return "|" + symbol + " " + suit + "|";
+	}
 }
